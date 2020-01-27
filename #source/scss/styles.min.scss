@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+    font-family: 'Open Sans', sans-serif;
+
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+
+    list-style: none;
+}
+button {
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+    background: none;
+}
+button:focus {
+    outline: none;
+}
+body {
+    overflow-x: hidden;
+}
+
+$purple: #5152fc;
+
+@import "menu";
+@import "home_page";
