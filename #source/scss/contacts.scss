@@ -1,0 +1,149 @@
+.contacts-main {
+    margin-bottom: 100px;
+    padding-top: 150px;
+
+    .container {
+        font-size: 0;
+
+        position: relative;
+
+        width: 100%;
+        max-width: 1460px;
+        margin: auto;
+    }
+
+    .main-info {
+        display: inline-block;
+
+        width: 50%;
+        padding: 0 40px;
+    }
+
+    .main-info-heading {
+        font-size: 68px;
+        font-weight: 800;
+        line-height: 1.2;
+
+        margin: 100px 0 25px;
+
+        color: $purple;
+    }
+
+    .main-info-subheading {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.8;
+
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .main-info-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        margin: 100px 0 25px;
+
+        color: $purple;
+    }
+
+    .main-info-sentence {
+        font-size: 32px;
+        line-height: 1.4;
+
+        margin: 0;
+        margin-bottom: 25px;
+
+        a {
+            text-decoration: none;
+
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    .main-figure {
+        position: relative;
+
+        display: inline-block;
+
+        width: 50%;
+        padding: 0 40px 8px;
+
+        text-align: center;
+        vertical-align: top;
+
+        img {
+            position: relative;
+
+            width: 96%;
+        }
+
+        .main-figure-background {
+            position: absolute;
+            top: 8%;
+            left: 0;
+
+            width: 96%;
+        }
+    }
+}
+@media screen and (max-width: 1365px){
+    .contacts-main {
+        .main-info-heading {
+            font-size: 60px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .contacts-main {
+        padding-top: 100px;
+        .main-info {
+            display: block;
+
+            width: 100%;
+            padding: 0 20px;
+        }
+        
+        .main-info-heading {
+            margin-top: 40px;
+        }
+        
+        .main-info-subheading {
+            font-size: 26px;
+        }
+
+        .main-info-title:first-child {
+            margin-top: 0;
+        }
+
+        .main-figure {
+            width: 100%;
+            
+            .main-figure-background {
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .contacts-main {
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .contacts-main {
+        .main-info-heading {
+            font-size: 42px;
+        }
+        .main-info-subheading {
+            font-size: 23px;
+        }
+    }
+}

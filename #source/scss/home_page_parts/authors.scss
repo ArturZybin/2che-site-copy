@@ -1,0 +1,130 @@
+.authors {
+    margin-top: 150px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 1460px;
+        margin: auto;
+
+        justify-content: center;
+    }
+
+    .card {
+        position: relative;
+
+        overflow: hidden;
+
+        width: 75%;
+        max-width: 1095px;
+        margin: 20px auto;
+        padding: 0 40px;
+
+        color: #fff;
+    }
+
+    .card-1 {
+        margin-left: 0;
+    }
+
+    .card-2 {
+        margin-right: 0;
+    }
+
+    .card-image-wrapper {
+        transition: 300ms ease-in-out;
+    }
+
+    .card-image {
+        transition: background-position 300ms 85ms ease-in-out, background-size 300ms ease-in-out;
+
+        background-position: 100%;
+        background-size: 101%;
+    }
+
+    .card-image img {
+        width: 100%;
+    }
+
+    .card-link:hover {
+        display: inline-block;
+        overflow: hidden;
+
+        .card-image-wrapper {
+            transition: 300ms ease-in-out;
+            transform: scale(.98);
+        }
+        .card-image {
+            transition: background-position 300ms ease-in-out, background-size 300ms 85ms ease-in-out;
+
+            background-position: 60%;
+            background-size: 110%;
+        }
+    }
+
+    .card-data {
+        position: absolute;
+        bottom: 0;
+
+        width: calc(100% - 80px);
+        padding: calc((100% - 80px) * .05);
+
+        color: #fff;
+    }
+
+    .card-1 .card-data {
+        color: #000;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 700;
+
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .card-description {
+        font-size: 16px;
+        line-height: 29px;
+
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1365px) {
+    .authors {
+        .card {
+            padding: 0 20px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .authors {
+        margin-top: 80px;
+
+        .card {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .card-data {
+            width: calc(100% - 40px);
+            padding: calc((100% - 40px) * .05);
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .authors {
+        margin-top: 40px;
+
+        .card-title {
+            font-size: 18px;
+
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 14px;
+        }
+    }
+}

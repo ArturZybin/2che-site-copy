@@ -1,0 +1,288 @@
+.hands {
+    overflow: hidden;
+
+    height: 633px;
+    padding-top: 150px;
+
+    .container {
+        position: relative;
+
+        width: 100%;
+        max-width: 1460px;
+        height: 100%;
+        margin: auto;
+        padding: 0 20px;
+
+        text-align: center;
+    }
+
+    .hand {
+        &:before {
+            position: absolute;
+
+            display: inline-block;
+
+            animation: flicker 4s linear infinite both;
+        }
+        @keyframes flicker {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 1;
+            }
+            45% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            55% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .hand-left {
+        position: absolute;
+        z-index: -1;
+        top: 70px;
+        right: 50%;
+
+        margin-right: 250px;
+
+        &:before {
+            top: 160px;
+            left: 100%;
+
+            width: 65px;
+            height: 85px;
+
+            content: url('../img/lightning_01.svg');
+        }
+    }
+
+    .hand-right {
+        position: absolute;
+        z-index: -1;
+        top: -210px;
+        left: 50%;
+
+        margin-left: 250px;
+
+        &:before {
+            top: 450px;
+            right: 98%;
+
+            width: 95px;
+            height: 55px;
+
+            content: url('../img/lightning_02.svg');
+        }
+    }
+
+    .hands-phrase {
+        font-size: 42px;
+        font-style: italic;
+        line-height: 1.8;
+
+        margin: 0 0 10px;
+    }
+
+    .hands-title {
+        font-size: 62px;
+        font-weight: 800;
+        font-style: italic;
+        line-height: 1.2;
+
+        position: relative;
+
+        margin: 0 0 25px;
+
+        color: $purple;
+
+        span:before {
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: .22em;
+            left: 0;
+
+            display: block;
+
+            width: 12.3ch;
+            height: 3px;
+            margin: auto;
+
+            content: '';
+
+            background-color: #ebd505;
+        }
+    }
+
+    .hands-undertext {
+        font-size: 224px;
+        font-weight: 800;
+        line-height: 224px;
+
+        position: relative;
+        z-index: -2;
+        top: -30px;
+
+        color: #eaedf2;
+    }
+}
+@media screen and (max-width: 1365px) {
+    .hands {
+        height: 588px;
+
+        .hands-phrase {
+            font-size: 38px;
+        }
+
+        .hands-title {
+            font-size: 56px;
+        }
+
+        .hands-undertext {
+            font-size: 200px;
+            line-height: 200px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .hands {
+        height: 543px;
+
+        .hand-left {
+            top: 25px;
+
+            margin-right: 150px;
+
+            transform: scale(.9);
+        }
+
+        .hand-right {
+            top: -235px;
+
+            margin-left: 150px;
+
+            transform: scale(.9);
+        }
+
+        .hands-phrase {
+            font-size: 36px;
+        }
+
+        .hands-title {
+            font-size: 50px;
+        }
+
+        .hands-undertext {
+            font-size: 170px;
+            line-height: 170px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .hands {
+        height: 400px;
+        padding-top: 80px;
+
+        .hands-phrase {
+            font-size: 32px;
+        }
+
+        .hands-title {
+            font-size: 42px;
+        }
+
+        .hands-undertext {
+            font-size: 120px;
+            line-height: 120px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .hands {
+        height: 331px;
+        padding: 40px 0;
+
+        .hand-left {
+            top: -22px;
+
+            margin-right: -50px;
+
+            transform: scale(.7);
+        }
+
+        .hand-right {
+            top: -245px;
+
+            margin-left: -30px;
+
+            transform: scale(.7);
+        }
+
+        .hands-phrase {
+            font-size: 28px;
+        }
+
+        .hands-title {
+            font-size: 34px;
+        }
+
+        .hands-undertext {
+            font-size: 76px;
+            line-height: 76px;
+
+            top: -10px;
+        }
+    }
+}
+@media screen and (max-width: 490px) {
+    .hands {
+        height: 381px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hands {
+        height: 273px;
+        padding: 40px 0;
+
+        .hand-left {
+            top: -70px;
+
+            margin-right: -130px;
+
+            transform: scale(.6);
+        }
+
+        .hand-right {
+            top: -260px;
+
+            margin-left: -120px;
+
+            transform: scale(.6);
+        }
+
+        .hands-phrase {
+            font-size: 20px;
+        }
+
+        .hands-title {
+            font-size: 30px;
+        }
+
+        .hands-undertext {
+            font-size: 48px;
+            line-height: 48px;
+
+            top: -10px;
+        }
+    }
+}

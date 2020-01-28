@@ -1,4 +1,4 @@
-.main {
+.about-main {
     padding-top: 150px;
     
     .container {
@@ -38,7 +38,7 @@
     }
 }
 @media screen and (max-width: 1365px) {
-    .main {
+    .about-main {
         .container {
             & > * {
                 padding: 0 20px;
@@ -56,7 +56,7 @@
     }
 }
 @media screen and (max-width: 1023px) {
-    .main {
+    .about-main {
         padding-top: 100px;
         
         .main-title {
@@ -72,7 +72,7 @@
     }
 }
 @media screen and (max-width: 767px) {
-    .main {
+    .about-main {
         padding-top: 60px;
         
         .main-title {
@@ -90,8 +90,8 @@
         }
     }
 }
-@media screen and (max-width: 767px) {
-    .main {
+@media screen and (max-width: 480px) {
+    .about-main {
         .main-title {
             font-size: 42px;
         }

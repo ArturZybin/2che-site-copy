@@ -1,0 +1,223 @@
+.testimonials {
+    margin-top: 150px;
+    padding: 120px 0;
+
+    background-color: $purple;
+
+    .container {
+        display: flex;
+
+        width: 100%;
+        max-width: 1460px;
+        height: 100%;
+        margin: auto;
+    }
+
+    .testimonials-column {
+        position: relative;
+
+        width: 50%;
+        padding: 0 40px;
+
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .testimonials-title {
+        font-size: 68px;
+        font-weight: 800;
+        line-height: 1.2;
+
+        margin-top: 0;
+        margin-bottom: 25px;
+
+        color: #fff;
+    }
+
+    .testimonials-subtitle {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        margin-top: 0;
+        margin-bottom: 25px;
+
+        color: #fff;
+    }
+
+    .slide {
+        padding-left: 150px;
+    }
+
+    .testimonials-quote {
+        font-size: 24px;
+        font-style: italic;
+        line-height: 1.8;
+
+        margin: 35px 0;
+    }
+
+    .testimonials-author {
+        font-size: 18px;
+        line-height: 1.8;
+
+        margin: 0;
+        margin-bottom: 25px;
+
+        color: #fff;
+
+        span {
+            font-size: 15px;
+
+            color: #000;
+        }
+    }
+
+    .testimonials-arrows {
+        position: absolute;
+        top: 0;
+
+        width: 110px;
+        height: 100px;
+    }
+
+    .slick-prev {
+        top: 25px;
+        left: 0;
+
+        width: 110px;
+        height: 50px;
+
+        border-bottom: 1px solid #000;
+
+        &:before {
+            font-family: 'FontAwesome';
+            font-size: 27px;
+            font-weight: 500;
+
+            content: '\f106';
+
+            color: #000;
+        }
+        &:hover:before {
+            transition-delay: 50ms;
+            transition-duration: 400ms;
+
+            color: #fff;
+        }
+    }
+
+    .slick-next {
+        top: 75px;
+        left: 0;
+
+        width: 110px;
+        height: 50px;
+
+        &:before {
+            font-family: 'FontAwesome';
+            font-size: 27px;
+            font-weight: 500;
+
+            content: '\f107';
+
+            color: #000;
+        }
+        &:hover:before {
+            transition-delay: 50ms;
+            transition-duration: 400ms;
+
+            color: #fff;
+        }
+    }
+
+    .slick-dots {
+        li {
+            margin: 0 -2px;
+        }
+
+        button:before {
+            font-size: 10px;
+
+            cursor: default;
+
+            color: #fff;
+        }
+        .slick-active button:before {
+            color: #fff;
+        }
+        button:hover:before {
+            opacity: .25;
+        }
+        .slick-active button:hover:before {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 1365px) {
+    .testimonials {
+        .testimonials-title {
+            font-size: 60px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .testimonials {
+        margin-top: 80px;
+        padding: 80px 0;
+
+        .container {
+            flex-direction: column;
+        }
+
+        .testimonials-column {
+            width: 100%;
+            margin-top: 30px;
+            padding: 0 20px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .testimonials {
+        margin-top: 40px;
+        padding: 40px 0;
+
+        .testimonials-column {
+            margin-top: 0;
+        }
+
+        .testimonials-column:nth-child(2) {
+            margin-top: 30px;
+        }
+
+        .slide {
+            padding-left: 0;
+        }
+
+        .testimonials-title {
+            font-size: 50px;
+        }
+
+        .testimonials-subtitle {
+            font-size: 20px;
+        }
+
+        .testimonials-quote {
+            font-size: 20px;
+        }
+
+        .testimonials-arrows {
+            top: -100px;
+
+            border-bottom: 1px solid black;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .testimonials {
+        .testimonials-title {
+            font-size: 42px;
+        }
+    }
+}

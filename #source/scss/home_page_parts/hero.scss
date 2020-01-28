@@ -1,0 +1,338 @@
+.hero {
+    padding-top: 150px;
+
+    .container {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+
+        box-sizing: border-box;
+        max-width: 1460px;
+        height: 787px;
+        margin: auto;
+        padding-bottom: 50px;
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .hero-data {
+        font-weight: 800;
+
+        padding: 0 40px;
+    }
+    
+    .hero-heading {
+        font-size: 96px;
+        line-height: 115px;
+
+        padding-top: 65px;
+
+        color: $purple;
+    }
+
+    .hero-subheading {
+        font-size: 36px;
+
+        margin: 36px 0;
+
+        text-transform: uppercase;
+    }
+    
+    .typed-cursor {
+        position: relative;
+        top: -4px;
+
+        color: #ebd505;
+    }
+
+
+    .hero-slides-wrap {
+        position: relative;
+        z-index: 0;
+
+        width: 50%;
+    }
+
+    .hero-background {
+        position: absolute;
+        top: 20px;
+        bottom: 80px;
+
+        width: 100%;
+        height: 637px;
+
+        .scene {
+            position: absolute;
+            z-index: -1;
+
+            overflow: visible!important;
+
+            width: 100%;
+            height: 100%;
+
+            transform: translate(-40%,-7%);
+
+            path {
+                fill: url(#fillGradient) #479;
+            }
+        }
+    }
+
+    .hero-slider {
+        padding: 0 40px;
+    }
+
+    .one-slide {
+        height: 737px;
+        padding: 50px 0 100px;
+
+        text-align: center;
+        &:focus {
+            outline: none;
+        }
+
+        .badge {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 40px;
+
+            width: 200px;
+            height: 200px;
+        }
+        .avatar {
+            position: relative;
+            z-index: 3;
+
+            display: inline-block;
+
+            height: 587px;
+        }
+        .quote {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 30px;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            text-align: right;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .scroll-tooltip {
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+
+        width: 40px;
+        height: 81px;
+
+        span {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+
+            display: inline-block;
+
+            margin-left: -16px;
+
+            transform: rotate(-90deg);
+        }
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        .one-slide {
+            .badge {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hero {
+        padding-top: 100px;
+        
+        .container {
+            height: 837px;
+        }
+        
+        .hero-data {
+            padding: 0 20px;
+        }
+        .hero-heading {
+            font-size: 70px;
+            line-height: 84px;
+
+            padding-top: 46px;
+        }
+        .hero-subheading {
+            font-size: 26px;
+
+            margin: 26px 0;
+        }
+
+        .hero-background {
+            height: 687px;
+        }
+        .hero-slider {
+            padding: 0 20px;
+        }
+        
+        .one-slide {
+            height: 787px;
+            .badge {
+                top: 10px;
+                right: 5px;
+
+                width: 179px;
+                height: 179px;
+            }
+            .avatar {
+                height: 637px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero {
+        .container {
+            flex-direction: column;
+
+            height: 1202px;
+
+            text-align: center;
+        }
+
+        .hero-heading {
+            padding-top: 40px;
+        }
+        .hero-subheading {
+            line-height: 33px;
+        }
+            
+        .hero-slides-wrap {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .hero-background {
+            right: 40px;
+            left: 40px;
+
+            width: calc(100% - 80px);
+            .scene {
+                transform: translate(-90%,-7%);
+            }
+        }
+
+        .one-slide {
+            height: 820px;
+
+            .badge {
+                top: 0;
+                left: 50%;
+
+                width: 200px;
+                height: 200px;
+                margin-left: 100px;
+            }
+            .avatar {
+                height: 670px;
+            }
+        }
+        
+        .scroll-tooltip {
+            visibility: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        padding-top: 60px;
+        
+        .container {
+            height: 970px;
+        }
+        
+        .hero-heading {
+            font-size: 60px;
+            line-height: 72px;
+        }
+        .hero-subheading {
+            font-size: 23px;
+            line-height: 28px;
+
+            margin: 24px 0;
+        }
+            
+        .hero-background {
+            height: 520px;
+        }
+
+        .one-slide {
+            height: 620px;
+            .badge {
+                top: 10px;
+
+                width: 140px;
+                height: 140px;
+                margin-left: 70px;
+            }
+            .avatar {
+                height: 470px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        .container {
+            height: 836px;
+        }
+        
+        .hero-heading {
+            font-size: 42px;
+            line-height: 50px;
+        }
+        
+        .hero-background {
+            height: 430px;
+        }
+
+        .one-slide {
+            height: 530px;
+            .badge {
+                top: 20px;
+                right: 20px;
+                left: auto;
+
+                width: 100px;
+                height: 100px;
+                margin-left: 0;
+            }
+            .avatar {
+                height: 380px;
+            }
+        }
+    }
+}

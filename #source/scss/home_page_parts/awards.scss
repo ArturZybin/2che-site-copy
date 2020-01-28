@@ -1,0 +1,33 @@
+.awards {
+    .container {
+        width: 100%;
+        max-width: 1460px;
+        margin: auto;
+        padding: 0 40px 5px;
+    }
+    
+    img {
+        height: 120px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .awards {
+        .container {
+            padding: 0 20px 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .awards {
+        .container {
+            padding-bottom: 5px;
+        }
+        
+        img {
+            height: 90px;
+        }
+    }
+}
