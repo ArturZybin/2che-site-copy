@@ -18,6 +18,10 @@ $(document).ready(function (){
 let lastPageYOffset = 0;
 
 function scrollMenuChange() {
+    if ($('.menu').hasClass('menu-opened')) {
+        return;
+    }
+    
     let $header = $('.header');
     
     if (window.pageYOffset < 25) {
@@ -41,6 +45,7 @@ function scrollMenuChange() {
         lastPageYOffset = window.pageYOffset;
     }
 }
+
 
 function toggleMenu() {
     let $menu = $('.menu');

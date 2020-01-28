@@ -1,5 +1,5 @@
 .hero {
-    margin-top: 150px;
+    padding-top: 150px;
 
     .container {
         position: relative;
@@ -167,7 +167,7 @@
 
 @media screen and (max-width: 1023px) {
     .hero {
-        margin-top: 100px;
+        padding-top: 100px;
         
         .container {
             height: 837px;
@@ -267,7 +267,7 @@
 
 @media screen and (max-width: 767px) {
     .hero {
-        margin-top: 60px;
+        padding-top: 60px;
         
         .container {
             height: 970px;

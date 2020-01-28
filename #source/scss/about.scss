@@ -1,0 +1,108 @@
+.main {
+    padding-top: 150px;
+    
+    .container {
+        width: 100%;
+        max-width: 1460px;
+        margin: auto;
+        
+        & > * {
+            padding: 0 40px;
+        }
+    }
+    
+    .main-title {
+        margin: 100px 0;
+        line-height: 1.2;
+        font-size: 96px;
+        font-weight: 800;
+        color: $purple;
+        width: 75%;
+    }
+    
+    .main-img {
+        width: 100%;
+    }
+    
+    .main-content {
+        padding-top: 100px;
+        width: 50%;
+        margin: auto;
+        line-height: 1.8;
+        font-size: 26px;
+    }
+    
+    .main-content-paragraph {
+        margin: 0;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 1365px) {
+    .main {
+        .container {
+            & > * {
+                padding: 0 20px;
+            }
+        }
+        
+        .main-title {
+            font-size: 80px;
+        }
+        
+        .main-content {
+            padding-top: 100px;
+            width: (100% / 3 * 2);
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .main {
+        padding-top: 100px;
+        
+        .main-title {
+            font-size: 70px;
+            margin-top: 40px;
+            width: 100%;
+        }
+        
+        .main-content {
+            padding-top: 40px;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .main {
+        padding-top: 60px;
+        
+        .main-title {
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+        
+        .main-content {
+            font-size: 20px;
+            padding-bottom: 40px;
+        }
+        
+        .main-content-paragraph {
+            padding-bottom: 30px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .main {
+        .main-title {
+            font-size: 42px;
+        }
+        
+        .main-content {
+            font-size: 20px;
+            padding-bottom: 40px;
+        }
+        
+        .main-content-paragraph {
+            padding-bottom: 30px;
+        }
+    }
+}
