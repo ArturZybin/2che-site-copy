@@ -37,6 +37,13 @@
         padding-bottom: 60px;
     }
 }
+.our-location {
+    .location-card-title.lets-roll {
+        span:before{
+            width: 7.35ch;
+        }
+    }
+}
 @media screen and (max-width: 1365px) {
     .about-main {
         .container {

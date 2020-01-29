@@ -1,5 +1,4 @@
 $(document).ready(function (){
-    typingHeroSubheading();
     $('.header-burger').click(toggleMenu);
     
     window.onscroll = () => didScroll = true;
@@ -62,42 +61,4 @@ function toggleMenu() {
         $burger.addClass('header-burger-closed');
         $burger.removeClass('header-burger-opened');
     }
-}
-
-
-async function typingHeroSubheading(){
-    let phrases = ['fresh methods', 'creative approach', 'attention to detail'];
-    let span = document.querySelector('.typed');
-    let phraseIndex = 0;
-    
-    while (true) {
-        let phrase = phrases[phraseIndex];
-        
-        for (let letter of phrase) {
-            await appendLetter(span, letter, 100);
-        }
-        await appendLetter(span, '', 1500);
-        while(span.textContent != ''){
-            await deleteLetter(span, 50);
-        }
-        
-        (phraseIndex == 2) ? phraseIndex = 0: phraseIndex += 1;
-    }
-}
-
-function appendLetter(el, letter, delay) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            el.textContent += letter;
-            resolve();
-        }, delay);
-    })
-}
-function deleteLetter(el, delay) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            el.textContent = el.textContent.slice(0, -1);
-            resolve();
-        }, delay);
-    })
 }

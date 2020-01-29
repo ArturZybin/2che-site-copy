@@ -1,0 +1,208 @@
+.worker {
+    margin-top: 150px;
+    padding: 50px 0 0;
+
+    .container {
+        width: 100%;
+        max-width: 1460px;
+        margin: auto;
+        font-size: 0;
+    }
+
+    .padding-element {
+        padding: 0 40px;
+    }
+
+    .worker-main-information {
+        position: relative;
+
+        .name {
+            font-size: 224px;
+            font-weight: 800;
+            line-height: 1;
+
+            position: relative;
+
+            margin: 0;
+            margin-bottom: 25px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #eaedf2;
+        }
+
+        .last-name {
+            padding-top: 10px;
+            font-size: 28px;
+            line-height: 1.2;
+
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+
+            display: block;
+
+            transform: translateY(-50%);
+
+            color: #000;
+        }
+        
+        .services {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 50px;
+            line-height: 1.8;
+            font-size: 26px;
+        }
+    }
+    
+    .paragraph {
+        line-height: 1.8;
+        font-size: 30px;
+        margin: 20px auto 120px;
+        width: (100% * 2/3);
+    }
+    
+    .img {
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .wrapper {
+        position: relative;
+        margin-bottom: 80px;
+    }
+    
+    .full-page-image {
+        .wrapper {
+            padding-top: 40%;
+        }
+    }
+    
+    .full-container-image {
+        .wrapper {
+            padding-top: 68%;
+        }
+    }
+    
+    .half-container-image {
+        width: 50%;
+        display: inline-block;
+        
+        .wrapper {
+            padding-top: 145%;
+        }
+    }
+    
+    .macbook-screen {
+        width: 65%;
+        height: 62.1%;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15.8%;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        overflow: hidden;
+        
+        .page {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1365px) {
+    .worker {
+        .padding-element {
+            padding: 0 20px;
+        }
+        
+        .worker-main-information {
+            .name {
+                font-size: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .worker {
+        margin-top: 100px;
+        
+        .padding-element {
+            padding: 0 20px;
+        }
+        
+        .worker-main-information {
+            .name {
+                font-size: 170px;
+            }
+        }
+        
+        .paragraph {
+            width: 100%;
+        }
+        
+        .wrapper {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .worker {
+        margin-top: 60px;
+        
+        .worker-main-information {
+            .name {
+                font-size: 100px;
+            }
+            .last-name {
+                font-size: 24px;
+            }
+            .services {
+                font-size: 22px;
+            }
+        }
+        
+        .paragraph {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .half-container-image {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .worker {
+        margin-top: 60px;
+        
+        .worker-main-information {
+            .name {
+                font-size: 90px;
+            }
+            .last-name {
+                font-size: 18px;
+            }
+            .services {
+                font-size: 20px;
+            }
+        }
+        
+        .paragraph {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .half-container-image {
+            width: 100%;
+        }
+    }
+}

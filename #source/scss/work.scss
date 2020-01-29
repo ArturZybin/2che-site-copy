@@ -1,0 +1,136 @@
+.work-main {
+    margin-top: 150px;
+    padding: 50px 0 100px;
+
+    .container {
+        width: 100%;
+        max-width: 1460px;
+        margin: auto;
+    }
+
+    .main-list-item {
+        display: block;
+
+        padding: 50px 40px;
+
+        text-decoration: none;
+
+        .title {
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1.2;
+
+            margin: 0;
+
+            transition: .3s ease;
+            letter-spacing: 1px;
+
+            color: $purple;
+        }
+        span {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.5;
+
+            color: #000;
+        }
+
+        &:hover {
+            .title {
+                padding-left: 50px;
+
+                transition-duration: .3s;
+            }
+
+            & + .main-list-item-image {
+                transition: opacity 1s ease;
+
+                opacity: 1;
+            }
+        }
+    }
+
+    .main-list-item-image {
+        position: fixed;
+        z-index: -1;
+        top: 10vh;
+        right: 50px;
+
+        width: 56%;
+        max-width: 1066px;
+        height: 80vh;
+
+        transition: opacity 1s ease;
+
+        opacity: 0;
+        background-position: center center;
+        background-size: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1365px) {
+    .work-main {
+        .main-list-item {
+            padding: 50px 20px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .work-main {
+        margin-top: 100px;
+
+        .main-list-item {
+            .title {
+                font-size: 54px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .work-main {
+        margin-top: 60px;
+
+        .main-list-item {
+            padding: 30px 20px;
+
+            .title {
+                font-size: 42px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+
+            &:hover {
+                .title {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .main-list-item-image {
+            visibility: hidden;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .work-main {
+        .main-list-item {
+            .title {
+                font-size: 32px;
+            }
+
+            span {
+                font-size: 16px;
+
+                display: inline-block;
+
+                padding: 4px 0 2px;
+            }
+        }
+    }
+}
