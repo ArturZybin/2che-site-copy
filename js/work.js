@@ -1,1 +1,0 @@
-function moveImageWithMouse(e){let t=$(".main-list-item-image"),n=-(document.documentElement.clientWidth-e.clientX)/16,m=e.clientY/16;t.css("transform",`translate(${n}px, ${m}px)`)}$(document).ready((function(){document.onmousemove=moveImageWithMouse}));

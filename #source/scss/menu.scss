@@ -326,7 +326,7 @@
     }
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1365px), screen and (max-device-width: 1365px) {
     .header {
         .header-inner {
             right: 20px;
@@ -337,7 +337,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px), screen and (max-device-width: 1023px) {
     .header {
         height: 100px;
 
@@ -352,7 +352,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px), screen and (max-device-width: 767px) {
     .header {
         height: 60px;
 
@@ -436,7 +436,7 @@
         transition-duration: .4s;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px), screen and (max-device-width: 767px) {
     .header-scrolled.header {
         height: 60px;
 

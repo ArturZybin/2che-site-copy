@@ -1,4 +1,5 @@
 $(document).ready(function (){
+    if (!document.querySelector('.macbook-screen')) return;
     animateMacBook();
 });
 

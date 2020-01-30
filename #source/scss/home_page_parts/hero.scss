@@ -154,7 +154,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
     .hero {
         .one-slide {
             .badge {
@@ -165,7 +165,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px), screen and (max-device-width: 1023px) {
     .hero {
         padding-top: 100px;
         
@@ -211,7 +211,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px), screen and (max-device-width: 960px) {
     .hero {
         .container {
             flex-direction: column;
@@ -265,7 +265,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px), screen and (max-device-width: 767px) {
     .hero {
         padding-top: 60px;
         
@@ -304,7 +304,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
     .hero {
         .container {
             height: 836px;

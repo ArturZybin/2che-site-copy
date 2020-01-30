@@ -92,14 +92,14 @@
         margin: 0;
     }
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1365px), screen and (max-device-width: 1365px) {
     .authors {
         .card {
             padding: 0 20px;
         }
     }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px), screen and (max-device-width: 1023px) {
     .authors {
         margin-top: 80px;
 
@@ -114,7 +114,7 @@
         }
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px), screen and (max-device-width: 767px) {
     .authors {
         margin-top: 40px;
 

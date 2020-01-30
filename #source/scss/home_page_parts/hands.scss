@@ -136,7 +136,7 @@
         color: #eaedf2;
     }
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1365px), screen and (max-device-width: 1365px) {
     .hands {
         height: 588px;
 
@@ -154,7 +154,7 @@
         }
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
     .hands {
         height: 543px;
 
@@ -188,7 +188,7 @@
         }
     }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px), screen and (max-device-width: 1023px) {
     .hands {
         height: 400px;
         padding-top: 80px;
@@ -207,7 +207,7 @@
         }
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px), screen and (max-device-width: 767px) {
     .hands {
         height: 331px;
         padding: 40px 0;
@@ -244,12 +244,12 @@
         }
     }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 490px), screen and (max-device-width: 490px) {
     .hands {
         height: 381px;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
     .hands {
         height: 273px;
         padding: 40px 0;
