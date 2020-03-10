@@ -1,4 +1,4 @@
-# 2che-site-copy
+# 2che-website
 
 The beautiful website I created from the PSD template. Available [here](https://arturzybin.github.io/2che-website/)
  
