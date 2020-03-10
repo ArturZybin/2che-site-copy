@@ -1,6 +1,6 @@
 # 2che-site-copy
 
-The beautiful website I created from the PSD template. Available [here](https://arturzybin.github.io/2che-site-copy/)
+The beautiful website I created from the PSD template. Available [here](https://arturzybin.github.io/2che-website/)
  
 
 ## Getting Started
